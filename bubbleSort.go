@@ -5,7 +5,7 @@ import "fmt"
 func BubbleSort(arr []int) {
 	for i:=len(arr); i>0; i--{
 		for j:=0; j<i-1; j++{
-			if arr[j] > arr[j+1]{
+			if arr[j] > arr[j+1]{// 如果前一个元素比后一个元素小，就向后冒泡
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			}
 		}
